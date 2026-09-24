@@ -92,17 +92,17 @@ export default function Table<T>({
         <div className="flex flex-col">
             <div className="max-h-90 overflow-auto">
                 <table className="min-w-[700px] w-full border-collapse">
-                    <thead className="sticky top-0 z-10 border-b border-border bg-surface-muted">                        <tr>
-                        {columns.map((column) => (
-                            <th
-                                key={column.key}
-                                className={`px-5 py-3 text-left text-xs font-medium uppercase tracking-wide text-muted-foreground ${column.className ?? ""
-                                    }`}
-                            >
-                                {column.header}
-                            </th>
-                        ))}
-                    </tr>
+                    <thead className="sticky top-0 z-10 border-b border-border bg-surface-muted">
+                        <tr>
+                            {columns.map((column) => (
+                                <th
+                                    key={column.key}
+                                    className={`px-5 py-3 text-left text-xs font-medium uppercase tracking-wide text-muted-foreground ${column.className ?? ""
+                                        }`}>
+                                    {column.header}
+                                </th>
+                            ))}
+                        </tr>
                     </thead>
 
                     <tbody className="divide-y divide-border">
