@@ -131,6 +131,8 @@ I used Next.js App Router with TypeScript and Tailwind CSS.
 
 The application is split into reusable UI components (can replace with shadcn easily) such as buttons, inputs, dialogs, tables, pagination, skeleton loaders, and form components.
 
+used global css token across pages to maintain same styling
+
 TanStack Query is used for server state such as products and authentication data. Local component state is used for temporary UI state such as dialogs and form inputs.
 
 ### Authentication
